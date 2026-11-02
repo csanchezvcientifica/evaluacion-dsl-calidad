@@ -23,7 +23,7 @@ def motor_reglas_dsl(contexto):
         else:
             resultados.append("Descuento Regular Bajo")
             
-    # PROBLEMA 3: Variable declarada pero nunca usada
+    # PROBLEMA 3: Variable declarada pero nunca usadan hola esta es  una prueba
     variable_inutil = "esto_sobra"
     
     return resultados
