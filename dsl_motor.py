@@ -1,14 +1,12 @@
-# dsl_motor.py 
-# Este código es ineficiente a propósito para la prueba hola
-
+# dsl_motor.py
+# Código ineficiente para prueba de SonarCloud
 def motor_reglas_dsl(contexto):
     resultados = []
-    # PROBLEMA 1: Bucle innecesario y variable no utilizada
-    # SonarCloud lo marcará como "Code Smell" (ineficiencia)
+    # Code Smell 1: Bucle innecesario
     for i in range(1000): 
         pass 
         
-    # PROBLEMA 2: Lógica compleja y repetitiva (Alta complejidad ciclomática)
+    # Code Smell 2: Lógica compleja (Alta complejidad ciclomática)
     if contexto.get("es_vip") == True:
         if contexto.get("total") > 500:
             if contexto.get("pais") == "PE":
@@ -23,7 +21,13 @@ def motor_reglas_dsl(contexto):
         else:
             resultados.append("Descuento Regular Bajo")
             
-    # PROBLEMA 3: Variable declarada pero nunca usadan hola esta es  una prueba
-    variable_inutil = "esto_sobra"
+    # Code Smell 3: Variables declaradas pero nunca usadas
+    variable_inutil_1 = "esto_sobra"
+    variable_inutil_2 = "esto_tambien_sobra"
+    variable_inutil_3 = 12345
     
+    # Code Smell 4: Condición duplicada (código muerto)
+    if contexto.get("total") > 500:
+        pass
+        
     return resultados
