@@ -1,5 +1,5 @@
 # dsl_motor.py 
-# Este código es ineficiente a propósito para la prueba 
+# Este código es ineficiente a propósito para la prueba hola
 
 def motor_reglas_dsl(contexto):
     resultados = []
